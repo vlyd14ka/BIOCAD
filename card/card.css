@@ -1,0 +1,111 @@
+.card {
+    padding: 16px;
+    width: 296px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    display: flex;
+    gap: 12px;
+    flex-direction: row;
+    cursor: pointer;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    flex: 0 0 auto;
+}
+
+.card-logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.card-status {
+    padding: 4px 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+}
+
+.card-content__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    justify-content: space-between;
+
+}
+
+.card-content__body {
+    font-size: 13.5px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    gap: 4px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex-shrink: 1;
+    gap: 4px;
+}
+
+.card-description {
+    text-overflow: ellipsis;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    letter-spacing: 0.6px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+.card-id {
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.card-info {
+    gap: 4px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.38);
+}
+
+.card-content__footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.alarm {
+    display: flex;
+    padding: 6px 4px;
+    gap: 4px;
+    color: rgba(0, 0, 0, 0.12);
+}
+
+.card-status.busy {
+    color: rgba(15, 145, 230, 1);
+}
+
+.card-status img {
+
+    order: 1;
+}
+
+.card-status span {
+    order: 2;
+}
+
+.card-status.busy img {
+    order: 2;
+}
+
+.card-status.busy span {
+    order: 1;
+}

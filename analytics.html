@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="card/analytics.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+
+<body>
+    <header class="dashboard-header">
+        <img class="logo" src="images/headers/logo.svg" alt="Логотип компании" draggable="false">
+        <img class="profile" src="images/headers/profile.jpg" alt="Профиль пользователя" draggable="false">
+    </header>
+
+    <main class="card-description">
+        <div class="card-header">
+            <img class="card-logo" src="images/operations/unknown.png" alt="Логотип карточки" draggable="false">
+
+            <div class="card-info">
+                <span class="description">Система щелочи, Watertown, NaOH</span>
+                <span class="card-id">10025426</span>
+            </div>
+            <div class="card-status">
+                <img src="images/arrows/arrow_down_secondary.svg" draggable="false">
+                <span>Свободен</span>
+            </div>
+            <img class="follow-logo" src="images/icons/follow.svg" alt="Логотип отслеживания" draggable="false">
+        </div>
+
+        <div class="card-body">
+            <div class="card-body_headers">
+                <span class="analytics tab-btn" data-tab="analytics">АНАЛИТИКА</span>
+                <span class="info-description tab-btn active" data-tab="description">ОПИСАНИЕ</span>
+            </div>
+            <div class="tab-content" id="description"></div>
+
+            <div class="tab-content" id="analytics" style="display: none;">
+                <div class="data-container">
+                    <div class="data-field">
+                        <input type="datetime-local" value="2026-05-07T10:55">
+                    </div>
+                    <img src="images/arrows/arrow_right.svg" alt="Стрелка вправо" class="arrow-icon" draggable="false">
+                    <div class="data-field">
+                        <input type="datetime-local" value="2026-06-26T10:55">
+                    </div>
+                    <div class="save-button">
+                        <span class="save-button-text">Сохранить PDF</span>
+                        <img class="button-share" src="images/icons/button-share.svg" alt="Поделиться" draggable="false">
+                    </div>
+                </div>
+
+                <div class="times-chips">
+                    <div class="time-chip">День</div>
+                    <div class="time-chip">Неделя</div>
+                    <div class="time-chip-activity">2 Недели</div>
+                    <div class="time-chip">Месяц</div>
+                    <div class="time-chip">3 Месяца</div>
+                    <div class="time-chip">Полгода</div>
+                </div>
+
+                <div class="table">
+                    <div class="table-header">
+                        <span class="table-header-item">Дата и время</span>
+                        <img class="table-icon" src="images/icons/sort.svg" draggable="false">
+                        <span class="table-header-item">Вид работ</span>
+                        <img class="table-icon" src="images/arrows/arrow_down_secondary.svg" draggable="false">
+                        <img class="table-icon_loop" src="images/icons/loop.svg" draggable="false">
+                        <span class="table-header-item_loop">Дополнительно</span>
+                        <span class="table-header-item_user">Пользователь</span>
+                        <img class="table-icon" src="images/arrows/arrow_down_secondary.svg" draggable="false">
+                    </div>
+                    <div class="table-row">
+                        <span class="table-row-item">09.10.25 / 13:29</span>
+                        <span class="table-row-item">Проверка</span>
+                        <span class="table-row-item_loop">Образец/серия: 113-22</span>
+                        <span class="table-row-item_user">Иванов И.И.</span>
+                    </div>
+
+                    <div class="table-row_footer">
+                        <div class="row-footer">
+                            <span class="table-row-item_footer">Строк на странице:</span>
+                            <div class="numpage">
+                                <span class="table-row-item_footer">10</span>
+                                <img src="images/arrows/arrow_down_secondary.svg" alt="Стрелка вниз" class="table-icon_footer" draggable="false">
+                            </div>
+                            <span class="table-row-item_footer">1-2 из 2</span>
+                            <img class="table-row-img" src="images/arrows/arrow_first.svg" alt="Стрелка первый" draggable="false">
+                            <img class="table-row-img" src="images/arrows/arrow_left.svg" alt="Стрелка назад" draggable="false">
+                            <img class="table-row-img" src="images/arrows/arrow_next.svg" alt="Стрелка вперед" draggable="false">
+                            <img class="table-row-img" src="images/arrows/arrow_last.svg" alt="Стрелка последний" draggable="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="card/card.js"></script>
+</body>
+
+</html>
